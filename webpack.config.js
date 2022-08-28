@@ -109,15 +109,5 @@ let config = {
   },
 };
 
-// additional config for production build
-if (isProduction) {
-    // add polyfills
-    config.entry.unshift('./config/polyfills');
-
-    // do not use devServer or dev plugins
-    delete config.devServer;
-    config.plugins = [];
-}
-
 
 module.exports = config;
