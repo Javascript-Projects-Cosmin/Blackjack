@@ -23,7 +23,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "reactstart": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass-compile": "sass --watch scss:compiledCss"
